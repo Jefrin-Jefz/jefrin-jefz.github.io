@@ -1,0 +1,91 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #e9ecef;
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  background-color: #343a40;
+  
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 4rem;
+  width: 50%;
+}
+
+.profile-photo {
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  border-radius: 50%;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.section {
+  
+  border-radius: 8px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 80%;
+  max-width: 80%;
+  text-align: left;
+  background-color: #adb5bd;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header h1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .profile-photo {
+    margin-top: 10px;
+  }
+
+  .section {
+    max-width: 100%;
+    width: 90%;
+  }
+}
